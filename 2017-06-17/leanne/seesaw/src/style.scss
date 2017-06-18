@@ -71,6 +71,10 @@ body {
 #checkbox:checked {
   & + #outer {
     animation: rotate-right 0.6s $timingFn ;
+
+    span:nth-of-type(1) {
+      color: #fff;
+    }
     
     #white {
       transform: translateX(100%);
