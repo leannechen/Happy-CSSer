@@ -1,0 +1,151 @@
+body {
+  background-color: #18233e;
+  text-align: center;
+  padding: 10vh;
+}
+
+h1 {
+  color: white;
+  font-weight: normal;
+}
+
+p, a {
+  color: #ccc;
+}
+
+div {
+  display: inline-block;
+  position: absolute;
+}
+
+.container {
+  margin: 20vh auto;
+  border: 1px solid white;
+  position: relative;
+}
+
+.orange {
+  background-color: #f7a500;
+  width: 30px;
+  height: 30px;
+  border-radius: 0 0 30px 0;
+  transform-origin: left top;
+  animation: rotate-orange 2.5s infinite;
+}
+
+@keyframes rotate-orange {
+  0% {
+    transform: rorate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.red {
+  background-color: #902114;
+  width: 90px;
+  height: 180px;
+  border-top-left-radius: 180px;
+  border-bottom-left-radius: 180px;
+  left: -90px;
+  top: -90px;
+  transform-origin: right center;
+  animation: rotate-red 2.5s infinite;
+  background-image: url("https://raw.githubusercontent.com/wl00887404/Im-a-happy-front-end-beginner/master/src/img/texture.png");
+}
+
+@keyframes rotate-red {
+  0% {
+    transform: rorate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.white {
+  background-color: #ffffff;
+  width: 60px;
+  height: 120px;
+  border-top-left-radius: 120px;
+  border-bottom-left-radius: 120px;
+  left: -60px;
+  top: -60px;
+  transform-origin: right center;
+  animation: rotate-white 2.5s infinite;
+}
+
+@keyframes rotate-white {
+  0% {
+    transform: rorate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.grey {
+  width: 60px;
+  height: 60px;
+  left: -60px;
+  border-bottom-left-radius: 60px;
+  background-color: #e7e7e7;
+  transform-origin: right top;
+  animation: rotate-grey ease-in-out 1.25s infinite alternate;
+  transform: rotate(0deg);
+}
+
+@keyframes rotate-grey {
+  to {
+    transform: rotate(-90deg);
+  }
+}
+.black {
+  background-color: #000000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  left: -25px;
+  top: -25px;
+  animation: rotate-black 2.5s infinite;
+}
+
+@keyframes rotate-black {
+  0% {
+    transform: rorate(0deg);
+  }
+  50% {
+    transform: translateX(25px) rotate(-180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+.yellow {
+  background-color: #f7ce42;
+  top: -60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 0 60px 0 0;
+  transform-origin: left bottom;
+  animation: rotate-yellow 2.5s infinite;
+}
+
+@keyframes rotate-yellow {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
